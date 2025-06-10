@@ -18,6 +18,7 @@ import { ReadingModePage } from './pages/Dictionary/ReadingModePage';
 import { GrammarPage } from './pages/Grammar/GrammarPage';
 import { GrammarDetailPage } from './pages/Grammar/GrammarDetailPage';
 import { NewGrammarPage } from './pages/Grammar/NewGrammarPage';
+import { NewGrammarRulePage } from './pages/Grammar/NewGrammarRulePage';
 import { RoadmapsPage } from './pages/Roadmaps/RoadmapsPage';
 import { RoadmapDetailPage } from './pages/Roadmaps/RoadmapDetailPage';
 import { NewRoadmapPage } from './pages/Roadmaps/NewRoadmapPage';
@@ -55,6 +56,7 @@ function App() {
               <Route index element={<GrammarPage />} />
               <Route path="new" element={<NewGrammarPage />} />
               <Route path=":id" element={<GrammarDetailPage />} />
+              <Route path=":id/rule/new" element={<NewGrammarRulePage />} />
             </Route>
             <Route path="roadmaps">
               <Route index element={<RoadmapsPage />} />
