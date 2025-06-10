@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, Minus, Merge, Split, Highlight, Info, X } from 'lucide-react';
+import { Plus, Minus, Merge, Split, Highlighter as Highlight, Info, X } from 'lucide-react';
 
 interface TableCell {
   id: string;

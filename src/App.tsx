@@ -32,15 +32,15 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Public routes */}
-        <Route path="/" element={!isAuthenticated ? <LandingPage /> : <Navigate to="/home" replace />} />
-        <Route path="/auth/login" element={!isAuthenticated ? <LoginPage /> : <Navigate to="/home" replace />} />
-        <Route path="/auth/register" element={!isAuthenticated ? <RegisterPage /> : <Navigate to="/home" replace />} />
-        <Route path="/auth/forgot-password" element={!isAuthenticated ? <ForgotPasswordPage /> : <Navigate to="/home" replace />} />
+        <Route path="/" element={!isAuthenticated ? <LandingPage /> : <Navigate to="/home\" replace />} />
+        <Route path="/auth/login" element={!isAuthenticated ? <LoginPage /> : <Navigate to="/home\" replace />} />
+        <Route path="/auth/register" element={!isAuthenticated ? <RegisterPage /> : <Navigate to="/home\" replace />} />
+        <Route path="/auth/forgot-password" element={!isAuthenticated ? <ForgotPasswordPage /> : <Navigate to="/home\" replace />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         
         {/* Protected routes */}
         {isAuthenticated ? (
-          <Route path="/" element={<MainLayout />}>
+          <Route path="/\" element={<MainLayout />}>
             <Route path="home" element={<HomePage />} />
             <Route path="profile" element={<ProfilePage />} />
             <Route path="settings" element={<SettingsPage />} />
